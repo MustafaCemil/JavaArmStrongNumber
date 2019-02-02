@@ -102,42 +102,5 @@ public class ArmstrongNumber {
 		
 		scan.close();
 	}
-	
-	/*
-	public static void main(String[] args) {
-		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("First number: ");
-		int preNumber = scan.nextInt();
-		System.out.println("Last number: ");
-		int postNumber = scan.nextInt();
-		int a,b,c,temp,tut;
-		ArrayList<Integer> list = new ArrayList<>();
-		
-		for(int i=preNumber; i<=postNumber; i++) {
-			tut = i;
-			temp = tut % 10;
-			tut = (tut - temp)/10;
-			a = temp;
-			
-			temp = tut % 10;
-			tut = (tut - temp) / 10;
-			b = temp;
-			c = tut;
-			
-			temp = (a*a*a) + (b*b*b) + (c*c*c);
-			
-			if(temp == i) {
-				
-				list.add(temp);
-			}
-		}
-		
-		for(int i=0; i<list.size(); i++) {
-			System.out.println(list.get(i));
-		}
-		
-		scan.close();
-	}
-	*/
+
 }
