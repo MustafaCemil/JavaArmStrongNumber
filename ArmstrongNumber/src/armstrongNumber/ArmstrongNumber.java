@@ -89,13 +89,11 @@ public class ArmstrongNumber {
 		int postNumber = scan.nextInt();
 
 		while(preNumber == 0 && postNumber == 0) {
-			while(preNumber == postNumber) {
-				System.out.println("At least one 0 and number different");
-				System.out.println("First number: ");
-				preNumber = scan.nextInt();
-				System.out.println("Last number: ");
-				postNumber = scan.nextInt();
-			}
+			System.out.println("At least one 0 and number different");
+			System.out.println("First number: ");
+			preNumber = scan.nextInt();
+			System.out.println("Last number: ");
+			postNumber = scan.nextInt();
 		}
 		process(preNumber, postNumber);
 		show();
